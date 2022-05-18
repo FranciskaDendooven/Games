@@ -9,17 +9,22 @@
     <script defer src="script.js"></script>
 </head>
 <body>
-    <!--Should use <form>, but that includes PHP-->
-    <!--Have three buttons-->
-        <div class="selectBtn">
-            <button class="selectBtn"><img src="./img/paper.svg" alt="" width="200" height="200"></button>
-            <button class="selectBtn"><img src="./img/rock.svg" alt="" width="200" height="200"></button>
-            <button class="selectBtn"><img src="./img/scissor.svg" alt="" width="200" height="200"></button>
-        </div><!--end of selectBtn-->
-        <!--Have a play button to have the computer pick one randomly-->
-        <div class="play">
-            <button id="computerChoice">Play</button>
-        </div><!--end of play-->
+    <h1>&nbsp;&nbsp;ROCK&nbsp;&nbsp;PAPER&nbsp;&nbsp;SCISSOR&nbsp;&nbsp;</h1>
+    <div id="player1">
+        <img src="./img/paper.svg" alt="Black stylized paper with outcrop displaying: paper" id="img1" width="200" height="200">
+    </div>
+    <div id="player2">
+        <img src="./img/rock.svg" alt="Black stylized rock with outcrop displaying: rock" id="img2" width="200" height="200">
+    </div>
+    <div id="player3">
+        <img src="./img/scissor.svg" alt="Black stylized scissor with outcrop, twice displaying: scissor" id="img3" width="200" height="200">
+    </div>
+
+    <button type="button" onclick="game(0)" id="rock">ROCK</button>
+    <button type="button" onclick="game(1)" id="paper">PAPER</button>
+    <button type="button" onclick="game(2)" id="scissor">SCISSOR</button>
+
+    <button type="button" onclick="start()" id="play">PLAY</button>
 
 <!--Announce the winner
 No alert box, add a message to your html

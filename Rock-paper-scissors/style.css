@@ -1,1 +1,121 @@
-/*# sourceMappingURL=style.css.map */
+* {
+  background-color: #ccc;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+body {
+  /*#feedback{
+      margin-top: 50px;
+      display: flex;
+      justify-content: center;
+      }*/
+}
+body h1 {
+  font-family: "helvetica neue", sans-serif;
+  text-align: center;
+  font-weight: bolder;
+}
+body div {
+  /*display:flex;
+  justify-content: center;*/
+}
+body div #player1 img, body div #player2 img, body div #player3 img {
+  background: none;
+  border: none;
+  outline: none;
+}
+body div #img1 {
+  padding-top: 20px;
+  margin-left: 336px;
+}
+body div #img2 {
+  padding-top: 20px;
+  position: absolute;
+  top: 20%;
+  left: 52%;
+}
+body div #img3 {
+  position: absolute;
+  left: 400px;
+  top: 75%;
+  visibility: hidden;
+}
+body button {
+  cursor: pointer;
+  background: none;
+  border: none;
+  outline: none;
+  height: 80px;
+  width: 140px;
+  font-size: x-large;
+  font-weight: bold;
+}
+body button:hover {
+  transform: scale(1.2);
+}
+body #paper {
+  position: absolute;
+  left: 560px;
+  top: 75%;
+  visibility: hidden;
+}
+body #scissor {
+  position: absolute;
+  top: 75%;
+  left: 720px;
+  visibility: hidden;
+}
+body #play {
+  background-color: #333;
+  color: #fff;
+  border-radius: 44px;
+  position: absolute;
+  top: 75%;
+  left: 45%;
+}
+@-webkit-keyframes shakeLeft {
+  0% {
+    transform: rotateY(180deg) translateY(0px);
+  }
+  50% {
+    transform: rotateY(180deg) translateY(-50px);
+  }
+  100% {
+    transform: rotateY(180deg) translateY(0px);
+  }
+}
+@keyframes shakeLeft {
+  0% {
+    transform: rotateY(180deg) translateY(0px);
+  }
+  50% {
+    transform: rotateY(180deg) translateY(-50px);
+  }
+  100% {
+    transform: rotateY(180deg) translateY(0px);
+  }
+}
+@-webkit-keyframes shakeRight {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-50px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+@keyframes shakeRight {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-50px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}/*# sourceMappingURL=style.css.map */

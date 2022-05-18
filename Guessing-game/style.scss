@@ -1,0 +1,46 @@
+$font : "Helvetica Neue", sans-serif;
+*{
+        background-color: #ccc;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+    body{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        font-family: $font;
+        #container{
+            margin-left: 40%;
+            margin-top: 5%;
+            margin-right: 40%;
+
+            h1{
+             font-weight: bolder;
+             line-height: 1.4em;
+             border-radius: 20px 20px 0px 0px;
+             background-color: #333;
+             color: #fff;
+            }
+            
+            p{
+                line-height: 1.2em;
+            }
+
+        form{
+            label{
+                font-weight: bold;
+                padding-right: 3px;
+            }
+            input{
+                border-radius: 20px 0px 0px 20px;
+                background-color: #fff;
+                }
+            #btn{
+                    border-radius: 0px 20px 20px 0px;
+                    background-color: #333;
+                    color:#fff
+                }
+        }
+    }
+    }

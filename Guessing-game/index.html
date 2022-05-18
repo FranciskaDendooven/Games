@@ -5,9 +5,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Guessing-game</title>
+    <link rel="stylesheet" href="style.css">
     <script defer src="script.js"></script>
 </head>
 <body>
-    
+    <!--A user can enter a guess (what html element can be useful for this?)-->
+    <div id="container">
+        <h1>You feeling hungry?</h1>
+        <p>Guess what number I am thinking of and you will get served!<br>
+        Pick a number between 0 and 17. You can only guess once.<br>Fingers crossed you picked right!
+        </p>
+
+    <!--"play" button, the number will be compared to the secret number (generate a random nr)-->
+    <form>
+        <label for="guess">My Guess:</label>
+        <input type="number" id="guess"><button id="btn">Play!</button>
+    </form>
+    </div>
 </body>
 </html>

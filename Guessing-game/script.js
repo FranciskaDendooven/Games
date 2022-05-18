@@ -6,7 +6,7 @@ console.log('Random Number', randomNumber);
 
 btn.addEventListener('click', function(){
     let guess = document.getElementById("guess").value;
-    if (guess === randomNumber) {
+    if (guess == randomNumber) {
         alert(`Awesome! ${randomNumber} was correct. You can be named many things, hungry not being one of them.`);
       } else if (guess !== randomNumber) {
         alert(`Bummer... You guessed ${guess}. The secret number was ${randomNumber}.`);//use `` to avoid using signs like +, ""..

@@ -1,8 +1,8 @@
 * {
   background-color: #ccc;
-  background-repeat: no-repeat;
+  /* background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
+  background-position: center; */
 }
 
 body {
@@ -12,35 +12,32 @@ body {
       justify-content: center;
       }*/
 }
-body h1 {
+body .container h1 {
   font-family: "helvetica neue", sans-serif;
   text-align: center;
   font-weight: bolder;
 }
-body div {
-  /*display:flex;
-  justify-content: center;*/
-}
-body div #player1 img, body div #player2 img, body div #player3 img {
+body .container #player1 img, body .container #player2 img, body .container #player3 img {
   background: none;
   border: none;
   outline: none;
 }
-body div #img1 {
-  padding-top: 20px;
-  margin-left: 336px;
+body .container #img1 {
+  padding-top: 55px;
+  margin-left: 260px;
+  top: 20%;
 }
-body div #img2 {
+body .container #img2 {
   padding-top: 20px;
   position: absolute;
   top: 20%;
-  left: 52%;
+  left: 58%;
 }
-body div #img3 {
+body .container #img3 {
+  padding-top: 20px;
   position: absolute;
-  left: 400px;
-  top: 75%;
-  visibility: hidden;
+  left: 510px;
+  top: 20%;
 }
 body button {
   cursor: pointer;
@@ -55,46 +52,55 @@ body button {
 body button:hover {
   transform: scale(1.2);
 }
+body #rock {
+  position: absolute;
+  top: 75%;
+  left: 290px;
+  visibility: hidden;
+}
 body #paper {
   position: absolute;
-  left: 560px;
+  left: 540px;
   top: 75%;
   visibility: hidden;
 }
 body #scissor {
   position: absolute;
   top: 75%;
-  left: 720px;
+  left: 770px;
   visibility: hidden;
 }
 body #play {
+  justify-content: center;
   background-color: #333;
   color: #fff;
   border-radius: 44px;
   position: absolute;
   top: 75%;
-  left: 45%;
+  left: 42%;
 }
+
 @-webkit-keyframes shakeLeft {
   0% {
-    transform: rotateY(180deg) translateY(0px);
+    transform: translateY(0px);
   }
   50% {
-    transform: rotateY(180deg) translateY(-50px);
+    transform: translateY(-50px);
   }
   100% {
-    transform: rotateY(180deg) translateY(0px);
+    transform: translateY(0px);
   }
 }
+
 @keyframes shakeLeft {
   0% {
-    transform: rotateY(180deg) translateY(0px);
+    transform: translateY(0px);
   }
   50% {
-    transform: rotateY(180deg) translateY(-50px);
+    transform: translateY(-50px);
   }
   100% {
-    transform: rotateY(180deg) translateY(0px);
+    transform: translateY(0px);
   }
 }
 @-webkit-keyframes shakeRight {

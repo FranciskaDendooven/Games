@@ -2,20 +2,18 @@ $font: "helvetica neue", sans-serif;
 
 *{
     background-color: #ccc;
-    background-repeat: no-repeat;
+    /* background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
+    background-position: center; */
 }
 
 body{
+    .container{
     h1{
         font-family: $font;
         text-align: center;
         font-weight: bolder;
     }
-    div{
-        /*display:flex;
-        justify-content: center;*/
 
         #player1, #player2, #player3{
             img{
@@ -25,20 +23,21 @@ body{
             }
         }
         #img1{
-            padding-top: 20px;
-            margin-left: 336px;
+            padding-top: 55px;
+            margin-left: 260px;
+            top: 20%;
             }
         #img2{
             padding-top: 20px;
             position: absolute;
             top: 20%;
-            left: 52%;
+            left: 58%;
         }
         #img3{
+            padding-top: 20px;
             position: absolute;
-            left: 400px;
-            top: 75%;
-            visibility: hidden;
+            left: 510px;
+            top: 20%;
         }
     }
 
@@ -55,53 +54,57 @@ body{
                 transform:scale(1.2);
                 }
             }
-                //#rock{}
+                #rock{position: absolute;
+                    top: 75%;
+                    left: 290px;
+                    visibility: hidden;}
+
                 #paper{
                     position: absolute;
-                    left: 560px;
+                    left: 540px;
                     top: 75%;
                     visibility: hidden;
                 }
                 #scissor{
                     position: absolute;
                     top: 75%;
-                    left: 720px;
+                    left: 770px;
                     visibility: hidden;
                 }
             #play{
+                justify-content: center;
                 background-color: #333;
                 color: #fff;
                 border-radius: 44px;
                 position: absolute;
                 top: 75%;
-                left: 45%;
-                }
-
-                @keyframes shakeLeft{
-                    0%{
-                        transform: rotateY(180deg) translateY(0px);
-                        }
-                    50%{
-                        transform: rotateY(180deg) translateY(-50px);
-                        }
-                    100%{
-                        transform: rotateY(180deg) translateY(0px);
-                        }
-                }
-                @keyframes shakeRight{
-                    0%{
-                        transform: translateY(0px);
-                        }
-                    50%{
-                        transform: translateY(-50px);
-                        }
-                    100%{
-                        transform: translateY(0px);
-                        }
+                left: 42%;
                 }
     /*#feedback{
         margin-top: 50px;
         display: flex;
         justify-content: center;
         }*/
+    }
+    @keyframes shakeLeft{
+        0%{
+            transform: translateY(0px);
+            }
+        50%{
+            transform: translateY(-50px);
+            }
+        100%{
+            transform: translateY(0px);
+            }
+    }
+    @keyframes shakeRight{
+        0%{
+            transform: translateY(0px);
+            }
+        50%{
+            transform: translateY(-50px);
+            }
+        100%{
+            transform: translateY(0px);
+            }
     }

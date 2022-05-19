@@ -9,26 +9,28 @@
     <script defer src="script.js"></script>
 </head>
 <body>
-    <h1>&nbsp;&nbsp;ROCK&nbsp;&nbsp;PAPER&nbsp;&nbsp;SCISSOR&nbsp;&nbsp;</h1>
-    <div id="player1">
-        <img src="./img/paper.svg" alt="Black stylized paper with outcrop displaying: paper" id="img1" width="200" height="200">
-    </div>
-    <div id="player2">
-        <img src="./img/rock.svg" alt="Black stylized rock with outcrop displaying: rock" id="img2" width="200" height="200">
-    </div>
-    <div id="player3">
-        <img src="./img/scissor.svg" alt="Black stylized scissor with outcrop, twice displaying: scissor" id="img3" width="200" height="200">
-    </div>
+    <div class="container">
+        <h1>&nbsp;&nbsp;ROCK&nbsp;&nbsp;PAPER&nbsp;&nbsp;SCISSOR&nbsp;&nbsp;</h1>
+            <div id="player1">
+                <img src="./img/paper.svg" alt="Black stylized paper with outcrop displaying: paper" id="img1" width="200" height="200">
+            </div>
+            <div id="player2">
+                <img src="./img/rock.svg" alt="Black stylized rock with outcrop displaying: rock" id="img2" width="200" height="200">
+            </div>
+            <div id="player3">
+                <img src="./img/scissor.svg" alt="Black stylized scissor with outcrop, twice displaying: scissor" id="img3" width="200" height="200">
+            </div>
 
-    <button type="button" onclick="game(0)" id="rock">ROCK</button>
-    <button type="button" onclick="game(1)" id="paper">PAPER</button>
-    <button type="button" onclick="game(2)" id="scissor">SCISSOR</button>
+        <button type="button" onclick="game(0)" id="rock">ROCK</button>
+        <button type="button" onclick="game(1)" id="paper">PAPER</button>
+        <button type="button" onclick="game(2)" id="scissor">SCISSOR</button>
 
-    <button type="button" onclick="start()" id="play">PLAY</button>
+        <button type="button" onclick="start()" id="play">PLAY</button>
 
-<!--Announce the winner
-No alert box, add a message to your html
-Possible outcomes: draw (when both chose the same thing) or player won/lost-->
-<p id="feedback"></p>
+    <!--Announce the winner
+    No alert box, add a message to your html
+    Possible outcomes: draw (when both chose the same thing) or player won/lost-->
+        <p id="feedback"></p>
+</div><!--end of container-->
 </body>
 </html>

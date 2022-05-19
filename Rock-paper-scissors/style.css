@@ -5,17 +5,26 @@
   background-position: center; */
 }
 
-body {
-  /*#feedback{
-      margin-top: 50px;
-      display: flex;
-      justify-content: center;
-      }*/
-}
 body .container h1 {
   font-family: "helvetica neue", sans-serif;
   text-align: center;
   font-weight: bolder;
+}
+body .container #players {
+  font-family: "helvetica neue", sans-serif;
+  font-weight: bold;
+  background-color: #333;
+  color: #fff;
+  border-radius: 44px;
+  text-align: center;
+  word-spacing: 12em;
+  padding-right: 50px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  -webkit-border-radius: 44px;
+  -moz-border-radius: 44px;
+  -ms-border-radius: 44px;
+  -o-border-radius: 44px;
 }
 body .container #player1 img, body .container #player2 img, body .container #player3 img {
   background: none;
@@ -23,21 +32,22 @@ body .container #player1 img, body .container #player2 img, body .container #pla
   outline: none;
 }
 body .container #img1 {
-  padding-top: 55px;
+  padding-top: 40px;
   margin-left: 260px;
   top: 20%;
 }
 body .container #img2 {
-  padding-top: 20px;
+  padding-top: 50px;
   position: absolute;
   top: 20%;
   left: 58%;
 }
 body .container #img3 {
-  padding-top: 20px;
+  padding-top: 50px;
   position: absolute;
   left: 510px;
   top: 20%;
+  visibility: hidden;
 }
 body button {
   cursor: pointer;
@@ -79,6 +89,21 @@ body #play {
   top: 75%;
   left: 42%;
 }
+body #feedback {
+  font-family: "helvetica neue", sans-serif;
+  font-weight: bold;
+  text-align: center;
+  margin-right: 50px;
+}
+body #endScreen #endScreenContent #btnReplay {
+  justify-content: center;
+  background-color: #333;
+  color: #fff;
+  border-radius: 44px;
+  position: absolute;
+  top: 75%;
+  left: 42%;
+}
 
 @-webkit-keyframes shakeLeft {
   0% {
@@ -93,6 +118,28 @@ body #play {
 }
 
 @keyframes shakeLeft {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-50px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+@-webkit-keyframes shake {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-50px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+@keyframes shake {
   0% {
     transform: translateY(0px);
   }

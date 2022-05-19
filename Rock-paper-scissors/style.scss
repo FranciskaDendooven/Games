@@ -14,6 +14,22 @@ body{
         text-align: center;
         font-weight: bolder;
     }
+    #players{
+        font-family: $font;
+        font-weight: bold;
+        background-color: #333;
+        color: #fff;
+        border-radius: 44px;
+        text-align: center;
+        word-spacing: 12em;
+        padding-right: 50px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        -webkit-border-radius: 44px;
+        -moz-border-radius: 44px;
+        -ms-border-radius: 44px;
+        -o-border-radius: 44px;
+}
 
         #player1, #player2, #player3{
             img{
@@ -23,21 +39,22 @@ body{
             }
         }
         #img1{
-            padding-top: 55px;
+            padding-top: 40px;
             margin-left: 260px;
             top: 20%;
             }
         #img2{
-            padding-top: 20px;
+            padding-top: 50px;
             position: absolute;
             top: 20%;
             left: 58%;
         }
         #img3{
-            padding-top: 20px;
+            padding-top: 50px;
             position: absolute;
             left: 510px;
             top: 20%;
+            visibility: hidden;
         }
     }
 
@@ -80,13 +97,41 @@ body{
                 top: 75%;
                 left: 42%;
                 }
-    /*#feedback{
-        margin-top: 50px;
-        display: flex;
-        justify-content: center;
-        }*/
+    #feedback{
+        font-family: $font;
+        font-weight: bold;
+        text-align: center;
+        margin-right: 50px;
+        }
+
+    #endScreen{
+            #endScreenContent{
+                #btnReplay{
+                    justify-content: center;
+                    background-color: #333;
+                    color: #fff;
+                    border-radius: 44px;
+                    position: absolute;
+                    top: 75%;
+                    left: 42%;
+                    }
+            }
+        }
+
     }
+
     @keyframes shakeLeft{
+        0%{
+            transform: translateY(0px);
+            }
+        50%{
+            transform: translateY(-50px);
+            }
+        100%{
+            transform: translateY(0px);
+            }
+    }
+    @keyframes shake{
         0%{
             transform: translateY(0px);
             }
@@ -107,4 +152,5 @@ body{
         100%{
             transform: translateY(0px);
             }
+            
     }

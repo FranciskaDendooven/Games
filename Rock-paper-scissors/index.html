@@ -11,6 +11,7 @@
 <body>
     <div class="container">
         <h1>&nbsp;&nbsp;ROCK&nbsp;&nbsp;PAPER&nbsp;&nbsp;SCISSOR&nbsp;&nbsp;</h1>
+        <p id="players">COMPUTER&nbsp;&nbsp;YOU</p>
             <div id="player1">
                 <img src="./img/paper.svg" alt="Black stylized paper with outcrop displaying: paper" id="img1" width="200" height="200">
             </div>
@@ -27,10 +28,15 @@
 
         <button type="button" onclick="start()" id="play">PLAY</button>
 
-    <!--Announce the winner
-    No alert box, add a message to your html
-    Possible outcomes: draw (when both chose the same thing) or player won/lost-->
+    <!--Announce the winner-->
         <p id="feedback"></p>
+
+    <!--Endscreen-->
+    <div id="endScreen">
+        <div id="endScreenContent">
+            <button id="btnReplay" class="button" onclick="replay()">PLAY AGAIN</button>
+        </div>
+    </div><!--end of endscreen-->
 </div><!--end of container-->
 </body>
 </html>

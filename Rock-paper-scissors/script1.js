@@ -30,35 +30,43 @@ function game(position){
     setTimeout(() => {
         if (random == position){
             feedback.innerHTML = "DRAW!";
-            document.getElementById("feedback");
+            document.getElementById("feedback").setTimeout();
+            window.location.reload();
             
         }
         else if(position == 0 && random == 2){
             feedback.innerHTML = "PLAYER WON!";
-            document.getElementById("feedback");
+            document.getElementById("feedback").setTimeout();
+            window.location.reload();
         }
         else if(position == 1 && random == 0){
             feedback.innerHTML = "PLAYER WON!";
-            document.getElementById("feedback");
+            document.getElementById("feedback").setTimeout();
+            window.location.reload();
         }
         else if(position == 2 && random == 1){
             feedback.innerHTML = "PLAYER WON!";
-            document.getElementById("feedback");
-
+            document.getElementById("feedback").setTimeout();
+            window.location.reload();
         }
         else{
             feedback.innerHTML = "COMPUTER WON! Better Luck Next Time!";
-            document.getElementById("feedback");
-            document.querySelector('btnReplay').addEventListener('click', function(){
-                window.location.reload();
-                return false;
-              });
+            document.getElementById("feedback").setTimeout();
         }
 
-        /* document.querySelector('btnReplay').addEventListener('click', function(){
-            window.location.reload();
-            return false;
-          }); */
-
-    }, 6000);
+    }, 5500);
+    //advance(); is for setting a timer between 'slides' or 'img's'?
 }
+
+/* function replay(){
+    document.getElementById("endScreen").style.visibility= "visible";
+    document.getElementById("play").style.visibility="hidden";
+    document.getElementById("rock").style.visibility="hidden";
+    document.getElementById("paper").style.visibility="hidden";
+    document.getElementById("scissor").style.visibility="hidden";
+    console.log(replay);
+}
+document.addEventListener('click', event => {
+    if (window.reload());
+    btnReplay.style.visibility = "visible";
+  }); */

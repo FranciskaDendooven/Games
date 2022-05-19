@@ -5,10 +5,15 @@
   background-position: center; */
 }
 
+body .container #logo {
+  padding-left: 10px;
+  padding-bottom: 5px;
+}
 body .container h1 {
   font-family: "helvetica neue", sans-serif;
   text-align: center;
   font-weight: bolder;
+  margin-top: -60px;
 }
 body .container #players {
   font-family: "helvetica neue", sans-serif;
@@ -32,7 +37,7 @@ body .container #player1 img, body .container #player2 img, body .container #pla
   outline: none;
 }
 body .container #img1 {
-  padding-top: 40px;
+  padding-top: 30px;
   margin-left: 260px;
   top: 20%;
 }
@@ -95,7 +100,7 @@ body #feedback {
   text-align: center;
   margin-right: 50px;
 }
-body #endScreen #endScreenContent #btnReplay {
+body #endScreen #btnReplay {
   justify-content: center;
   background-color: #333;
   color: #fff;
@@ -103,6 +108,7 @@ body #endScreen #endScreenContent #btnReplay {
   position: absolute;
   top: 75%;
   left: 42%;
+  visibility: hidden;
 }
 
 @-webkit-keyframes shakeLeft {

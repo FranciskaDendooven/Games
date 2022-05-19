@@ -9,10 +9,15 @@ $font: "helvetica neue", sans-serif;
 
 body{
     .container{
+    #logo{
+        padding-left: 10px;
+        padding-bottom: 5px;
+    }
     h1{
         font-family: $font;
         text-align: center;
         font-weight: bolder;
+        margin-top: -60px;
     }
     #players{
         font-family: $font;
@@ -39,7 +44,7 @@ body{
             }
         }
         #img1{
-            padding-top: 40px;
+            padding-top: 30px;
             margin-left: 260px;
             top: 20%;
             }
@@ -105,7 +110,6 @@ body{
         }
 
     #endScreen{
-            #endScreenContent{
                 #btnReplay{
                     justify-content: center;
                     background-color: #333;
@@ -114,10 +118,9 @@ body{
                     position: absolute;
                     top: 75%;
                     left: 42%;
+                    visibility: hidden;
                     }
             }
-        }
-
     }
 
     @keyframes shakeLeft{

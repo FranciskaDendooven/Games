@@ -1,0 +1,24 @@
+* {
+  font-family: "arial", sans-serif;
+  text-align: center;
+}
+* #dealerCards img {
+  width: 125px;
+  height: 175px;
+  margin: 1px;
+}
+* #yourCards {
+  width: 125px;
+  height: 175px;
+  margin: 1px;
+}
+* #bust {
+  width: 100px;
+  height: 50px;
+  font-size: 20px;
+}
+* #stay {
+  width: 100px;
+  height: 50px;
+  font-size: 20px;
+}/*# sourceMappingURL=style.css.map */

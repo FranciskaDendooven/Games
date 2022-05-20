@@ -12,17 +12,3 @@ btn.addEventListener('click', function(){
         alert(`Bummer... You guessed ${guess}. The secret number was ${randomNumber}.`);//use `` to avoid using signs like +, ""..
       }
 });
-
-/*
-//push the "play" button, the number will be compared to the secret number
-function checkGuess() {
-    let myGuess = guess.value;
-    if (myGuess === randomNumber) {
-      feedback.textContent = "Awesome! 13 was correct. You can be named many things, hungry not being one of them.";
-    } else if (myGuess > randomNumber) {
-      feedback.textContent = "Bummer... You guessed" + myGuess + ". The secret number was 13.";
-    } /*else if (myGuess < randomNumber) {
-     feedback.textContent = "Your guess was " + myGuess + ". That's too low. Try Again!";
-   }  //else if=Nice to have!
- }
- submitGuess.addEventListener('click', checkGuess); */

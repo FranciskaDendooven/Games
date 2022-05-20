@@ -47,9 +47,9 @@ function startGame() {
     /* console.log(hidden);
     console.log(dealerSum); */
 
-    //Rule: deal cards to the dealer, unless they have cards less then or equal to 17
-    //Underneath: Creates less than 17 cards for the div dealerCards in the html
-    while (dealerSum < 17){
+    //Rule: deal cards to the dealer, unless they have cards less then or equal to 15
+    //Underneath: Creates less than 15 cards for the div dealerCards in the html
+    while (dealerSum < 15){
         let cardImg = document.createElement("img");//Create an img
         let card = deck.pop();//Get a card from the deck
         cardImg.src = "/21-card-game/cards/" + card + ".png";//Set the source for the card
@@ -58,6 +58,7 @@ function startGame() {
         document.getElementById("dealerCards").append(cardImg);//Append cardImg to the dealerCards div
     }
     console.log(dealerSum);
+    document.getElementById("dealerSum").innerHTML = dealerSum;
 
     //Rule: deal cards to the player, 2 cards
     //Underneath: Creates less than 2 cards for the div yourCards in the html
@@ -70,8 +71,10 @@ function startGame() {
         document.getElementById("yourCards").append(cardImg);//Append cardImg to the dealerCards div
     }
     console.log(yourSum);
+    document.getElementById("yourSum").innerHTML = yourSum;
     document.getElementById("bust").addEventListener("click", bust);
     document.getElementById("stay").addEventListener("click", stay);
+
 }
 
 function bust(){
@@ -92,8 +95,7 @@ function bust(){
     }
 }
 
-
-function stay (){//Total up the sum's + takes the concideration of reduceAce function
+function stay (){//Total up the sum's + takes the consideration of reduceAce function
     dealerSum = reduceAce(dealerSum, dealerAceCount);
     yourSum = reduceAce(yourSum, yourAceCount);
 
@@ -118,9 +120,7 @@ function stay (){//Total up the sum's + takes the concideration of reduceAce fun
         message = "You lose!";
     }
 
-    document.getElementById("dealerSum").innerText = "dealerSum";
-    document.getElementById("yourSum").innerText = "yourSum";//Display the score of..
-    document.getElementById("results").innerText = message;//Let msg display in html p "results"
+    document.getElementById("results").innerText = message;//Let msg display in html p "results" */
 }
 
 function getValue(card){

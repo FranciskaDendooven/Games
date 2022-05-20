@@ -1,3 +1,10 @@
+window.onload = function(){
+    document.getElementById("play").style.visibility="visible";
+    document.getElementById("rock").style.visibility="hidden";
+    document.getElementById("paper").style.visibility="hidden";
+    document.getElementById("scissor").style.visibility="hidden";
+    document.getElementById("btnReplay").style.visibility="hidden";
+};
 function start(){
     document.getElementById("play").style.visibility="hidden";
     document.getElementById("rock").style.visibility="visible";
@@ -13,7 +20,6 @@ clickedImg1=[`<img src="./img/paper.svg" alt="Black stylized paper with outcrop 
 clickedImg2=[`<img src="./img/paper.svg" alt="Black stylized paper with outcrop displaying: paper" id="img2" width="200" height="200">`,
 `<img src="./img/rock.svg" alt="Black stylized rock with outcrop displaying: rock" id="img2" width="200" height="200">`,
 `<img src="./img/scissor.svg" alt="Black stylized scissor with outcrop, twice displaying: scissor" id="img2" width="200" height="200">`];
-
 
 function game(position){
     document.getElementById("img1").style.animation="shakeLeft 1s 5 ease-in-out";
@@ -31,7 +37,6 @@ function game(position){
         if (random == position){
             feedback.innerHTML = "DRAW!";
             document.getElementById("feedback");
-            
         }
         else if(position == 0 && random == 2){
             feedback.innerHTML = "PLAYER WON!";
@@ -49,16 +54,17 @@ function game(position){
         else{
             feedback.innerHTML = "COMPUTER WON! Better Luck Next Time!";
             document.getElementById("feedback");
-            document.querySelector('btnReplay').addEventListener('click', function(){
-                window.location.reload();
-                return false;
-              });
         }
 
-        /* document.querySelector('btnReplay').addEventListener('click', function(){
-            window.location.reload();
-            return false;
-          }); */
+        document.getElementById("play").style.visibility="hidden";
+        document.getElementById("rock").style.visibility="hidden";
+        document.getElementById("paper").style.visibility="hidden";
+        document.getElementById("scissor").style.visibility="hidden";
+        document.getElementById("btnReplay").style.visibility="visible";
 
-    }, 6000);
+    }, 5500);
 }
+
+document.querySelector('#btnReplay').addEventListener('click', function(){
+    window.location.reload();
+});

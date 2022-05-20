@@ -1,8 +1,5 @@
 * {
   background-color: #ccc;
-  /* background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center; */
 }
 
 body .container #logo {
@@ -14,6 +11,7 @@ body .container h1 {
   text-align: center;
   font-weight: bolder;
   margin-top: -60px;
+  margin-right: 40px;
 }
 body .container #players {
   font-family: "helvetica neue", sans-serif;
@@ -22,14 +20,10 @@ body .container #players {
   color: #fff;
   border-radius: 44px;
   text-align: center;
-  word-spacing: 12em;
-  padding-right: 50px;
+  word-spacing: 13em;
+  padding-right: 90px;
   padding-top: 5px;
   padding-bottom: 5px;
-  -webkit-border-radius: 44px;
-  -moz-border-radius: 44px;
-  -ms-border-radius: 44px;
-  -o-border-radius: 44px;
 }
 body .container #player1 img, body .container #player2 img, body .container #player3 img {
   background: none;
@@ -98,9 +92,9 @@ body #feedback {
   font-family: "helvetica neue", sans-serif;
   font-weight: bold;
   text-align: center;
-  margin-right: 50px;
+  margin-right: 60px;
 }
-body #endScreen #btnReplay {
+body #btnReplay {
   justify-content: center;
   background-color: #333;
   color: #fff;
@@ -108,7 +102,6 @@ body #endScreen #btnReplay {
   position: absolute;
   top: 75%;
   left: 42%;
-  visibility: hidden;
 }
 
 @-webkit-keyframes shakeLeft {

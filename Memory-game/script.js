@@ -23,6 +23,7 @@ const shuffleCards = () => {
     }
     console.log(cardSet);
 };
+shuffleCards();
 
 const startGame = () => {
     //arrange board
@@ -42,4 +43,17 @@ const startGame = () => {
         cardContainer.push(row);
     }
     console.log(cardContainer);
+    setTimeout(hideCards, 1000);//sec to get a sneakpeek of the cards
+};
+
+const hideCards = () => {
+    for (let row = 0; row < rows; row++){
+        console.log("cow");
+        for (let column = 0; column < columns; column++){
+            let card = document.querySelector(".card");
+            console.log("hero");
+            card.src = "img/play.jpg";
+            console.log("cow");
+        }
+    }
 };

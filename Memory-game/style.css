@@ -1,0 +1,22 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  background-image: url("img/memory-bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+body #cardContainer {
+  width: 1000px;
+  height: auto;
+  margin: 0 auto;
+  margin-top: 10rem;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #ccc;
+}
+body #cardContainer .card {
+  height: auto;
+  width: 18%;
+  margin: 0.5rem;
+  background-color: #ccc;
+}/*# sourceMappingURL=style.css.map */

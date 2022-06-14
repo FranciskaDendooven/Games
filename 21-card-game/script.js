@@ -58,7 +58,6 @@ function startGame() {
         document.getElementById("dealerCards").append(cardImg);//Append cardImg to the dealerCards div
     }
     console.log(dealerSum);
-    document.getElementById("dealerSum").innerHTML = dealerSum;
 
     //Rule: deal cards to the player, 2 cards
     //Underneath: Creates less than 2 cards for the div yourCards in the html
@@ -71,7 +70,6 @@ function startGame() {
         document.getElementById("yourCards").append(cardImg);//Append cardImg to the dealerCards div
     }
     console.log(yourSum);
-    document.getElementById("yourSum").innerHTML = yourSum;
     document.getElementById("bust").addEventListener("click", bust);
     document.getElementById("stay").addEventListener("click", stay);
 
@@ -93,6 +91,7 @@ function bust(){
     if (reduceAce(yourSum, yourAceCount) > 21){//reduceAce function is checking the yourSum and yourAceCount to be more than 21
         canBust = false;
     }
+
 }
 
 function stay (){//Total up the sum's + takes the consideration of reduceAce function
@@ -119,7 +118,9 @@ function stay (){//Total up the sum's + takes the consideration of reduceAce fun
     else if (yourSum < dealerSum){
         message = "You lose!";
     }
-
+   
+    document.getElementById("dealerSum").innerHTML = dealerSum;
+    document.getElementById("yourSum").innerHTML = yourSum;
     document.getElementById("results").innerText = message;//Let msg display in html p "results" */
 }
 

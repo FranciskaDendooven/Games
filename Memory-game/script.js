@@ -11,35 +11,25 @@ playerLivesCount.textContent = playerLives;
 const randomize = () => {
     const cardData = cardList;
     cardData.sort(() => Math.random() - 0.5);
-    console.log(cardData);
+    // console.log(cardData);
     return cardData;
 };
 
 //card generator function
 const cardGenerator = () => {
     const cardData = randomize();
-/*     //generate html
-    const card = document.createElement("div");
-    const face = document.createElement("img");
-    const back = document.createElement("img");
-    card.classList = "card";
-    face.classList = "face";
-    back.classlist = "back";
-
-    //attach info to card
-    face.src = cardList[0].img;
-
-    section.append(card);
-    card.append(face);
-    card.append(back); */
+   //generate html
     cardList.forEach(card => {
-        console.log(card.img);
+        // console.log(card.img);
         const cardBody = document.createElement("div");
         const face = document.createElement("img");
         const back = document.createElement("img");
         cardBody.classList = "cardBody";
         face.classList = "face";
-        back.classlist = "back";
+        back.classList = "back";
+
+        // console.log("face:" + back.classList);
+        // console.log("back:" + back.classList);
 
         face.src = card.img;
 

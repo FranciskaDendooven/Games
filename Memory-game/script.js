@@ -2,6 +2,7 @@ import {cardList, cardBg} from './collection.js';
 
 const cards = document.querySelectorAll('.card');
 let matchedCards = 0;
+const button = document.querySelector("button");
 
 const randomize = () => {
     const cardData = cardList;
@@ -26,8 +27,10 @@ const cardGenerator = () => {
             firstChild.setAttribute("name", cardList[index].name);
 
             card.addEventListener('click', (e) => {
-                card.classList.toggle('is-flipped');
-                checkCards(e);
+                if(!card.classList.contains("matched")){
+                    card.classList.toggle('is-flipped');
+                    checkCards(e);
+                }
             });
         });
         const checkCards = (e) => {
@@ -44,7 +47,7 @@ const cardGenerator = () => {
 
                     if(matchedCards==8){
                         console.log('itsAMatch!');
-                        document.querySelector("#winner").style.visibility = "visible";
+                        document.querySelector("#replayButton").style.visibility = "visible";
                     }
 
                 } else {
@@ -64,14 +67,6 @@ const cardGenerator = () => {
 };
 cardGenerator();
 
-const button = document.querySelector("button");
 button.addEventListener("click", () => {
-const endCardGame = document.querySelectorAll(".matched");
-endCardGame.forEach(card => {
-    card.classList.remove("flipped");
-    card.classList.remove("matched");
-    card.classList.toggle('is-flipped');
-});
-document.querySelector("#winner").style.visibility = "hidden";
-matchedCards = 0;
+location.reload();
 });

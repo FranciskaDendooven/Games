@@ -6,29 +6,61 @@
 
 body {
   height: 100vh;
+  background-image: url(/Memory-game/img/memory-game-bg-blWh.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+body #logo {
+  margin-top: 0.5rem;
+  margin-left: 0.2rem;
+}
+body #replay {
+  margin-top: 5em;
+  margin-bottom: 3rem;
+  display: flex;
+  justify-content: center;
+}
+body #replay #replayButton {
+  visibility: hidden;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 800;
+  text-transform: uppercase;
+  color: #005f45;
+  background-color: #e4c8a5;
+  cursor: pointer;
+  border-radius: 25px;
+  border: 3px solid #ccc;
+  padding-left: 1em;
+  padding-top: 0.2em;
+  padding-right: 1em;
+  padding-bottom: 0.2em;
+  margin-bottom: 1rem;
+}
+body #replay #replayButton:hover {
+  transform: scale(1.1);
+  box-shadow: 2px 2px 2px 2px rgba(204, 204, 204, 0.2);
+}
+body .allCards {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
 }
-body #winner {
-  margin-top: 20rem;
-  visibility: hidden;
-  color: red;
-}
-body img {
+body .allCards img {
+  border: 3px solid #ccc;
+  border-radius: 8px;
   width: 150px;
   height: 100px;
 }
-body .cardContainer {
+body .allCards .cardContainer {
   display: grid;
-  margin-top: 10rem;
   grid-template-columns: repeat(4, 8rem);
   grid-template-rows: repeat(4, 8rem);
-  gap: 2rem;
+  -moz-column-gap: 2rem;
+       column-gap: 2rem;
   perspective: 800px;
 }
-body .card {
+body .allCards .card {
   position: relative;
   width: 100%;
   height: 100%;
@@ -37,14 +69,14 @@ body .card {
   transform-origin: center right;
   transition: transform 1s;
 }
-body .card.is-flipped {
+body .allCards .card.is-flipped {
   transform: translateX(-100%) rotateY(-180deg);
   -webkit-transform: translateX(-100%) rotateY(-180deg);
   -moz-transform: translateX(-100%) rotateY(-180deg);
   -ms-transform: translateX(-100%) rotateY(-180deg);
   -o-transform: translateX(-100%) rotateY(-180deg);
 }
-body .card__face {
+body .allCards .card__face {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -52,9 +84,9 @@ body .card__face {
           backface-visibility: hidden;
   pointer-events: none;
 }
-body .card__face--back {
+body .allCards .card__face--back {
   background: none;
 }
-body .card__face--front {
+body .allCards .card__face--front {
   transform: rotateY(180deg);
 }/*# sourceMappingURL=style.css.map */

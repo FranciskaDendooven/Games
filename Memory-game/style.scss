@@ -6,28 +6,61 @@
 
 body {
     height: 100vh;
+    background-image: url(/Memory-game/img/memory-game-bg-blWh.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    #logo{
+      margin-top: .5rem;
+      margin-left: .2rem;
+    }
+
+    #replay{
+      margin-top: 5em;
+      margin-bottom: 3rem;
+      display: flex;
+      justify-content: center;
+      #replayButton{
+        visibility: hidden;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 800;
+        text-transform: uppercase;
+        color: #005f45;
+        background-color: #e4c8a5;
+        cursor: pointer;
+        border-radius: 25px;
+        border: 3px solid #ccc;
+        padding-left: 1em;
+        padding-top: .2em;
+        padding-right: 1em;
+        padding-bottom: .2em;
+        margin-bottom: 1rem;
+        &:hover{
+          transform: scale(1.1);
+          box-shadow: 2px 2px 2px 2px rgba(204, 204 ,204, .2);
+}
+}
+    }
+
+    .allCards{
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
 
-    #winner{
-      margin-top: 20rem;
-      visibility: hidden;
-      color: red;
-    }
-
     img{
+        border: 3px solid #ccc;
+        border-radius: 8px;
         width: 150px;
         height: 100px;
-    }
+}
 
 .cardContainer {
     display: grid;
-    margin-top: 10rem;
     grid-template-columns: repeat(4, 8rem);
     grid-template-rows: repeat(4, 8rem);
-    gap: 2rem;
+    //row-gap: .3rem;
+    column-gap: 2rem;
     perspective: 800px;
 }
 
@@ -63,5 +96,6 @@ body {
 
 .card__face--front {
   transform: rotateY(180deg);
+}
 }
 }

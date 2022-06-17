@@ -11,6 +11,11 @@ body {
   align-items: center;
   flex-direction: column;
 }
+body #winner {
+  margin-top: 20rem;
+  visibility: hidden;
+  color: red;
+}
 body img {
   width: 150px;
   height: 100px;
@@ -21,7 +26,7 @@ body .cardContainer {
   grid-template-columns: repeat(4, 8rem);
   grid-template-rows: repeat(4, 8rem);
   gap: 2rem;
-  perspective: 600px;
+  perspective: 800px;
 }
 body .card {
   position: relative;
@@ -45,10 +50,11 @@ body .card__face {
   height: 100%;
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
-}
-body .card__face--front {
-  background: none;
+  pointer-events: none;
 }
 body .card__face--back {
+  background: none;
+}
+body .card__face--front {
   transform: rotateY(180deg);
 }/*# sourceMappingURL=style.css.map */

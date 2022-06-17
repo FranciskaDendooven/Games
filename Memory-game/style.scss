@@ -10,10 +10,17 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
 
+    header{
+      // position: sticky;
+      margin-left: 1rem;
+      margin-top: 1.5rem;
+
     #logo{
-      margin-top: .5rem;
-      margin-left: .2rem;
-    }
+      background-color: #ccc;
+      border-radius: 50%;
+      padding-top: .8em;
+      padding-bottom: .8em;
+}}
 
     #replay{
       margin-top: 5em;
@@ -98,4 +105,94 @@ body {
   transform: rotateY(180deg);
 }
 }
+}
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  body{
+    margin: 1rem;
+    display:flex;
+    flex-wrap: wrap;
+    background-image: url(/Memory-game/img/memory-game-bg-blWh\ -\ Copy.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: none;
+    background-color: #080808;
+
+    header{
+      margin-left: -.2rem;
+      // padding-right: .5em;
+      margin-top: -1rem;
+      // width: 20%;
+      // height: 20%;
+
+    #logo{
+      position: sticky;
+      width: 50%;
+      height: auto;
+      background-color: #ccc;
+      border-radius: 50%;
+      margin-top: 1rem;
+      padding-left: .45em;
+      padding-right: .45em;
+      // padding-top: .8em;
+      // padding-bottom: .8em;
+}}
+  
+    .allCards{
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: -3rem;
+      flex-direction: column;
+  
+      img{
+          border: 3px solid #ccc;
+          border-radius: 8px;
+          width: 225px;
+          height: 175px;
+  }
+  
+  .cardContainer {
+      display: grid;
+      grid-template-columns: repeat(2, 14rem);
+      grid-template-rows: repeat(8, 12rem);
+      //row-gap: .3rem;
+      column-gap: 2rem;
+      margin-left: 12rem;
+      margin-right: 12rem;
+  }
+  }
+  
+  }
+  #replay{
+    // // margin-top: 5em;
+    // // margin-bottom: 3rem;
+    // display: flex;
+    // justify-content: center;
+    #replayButton{
+      visibility: hidden;
+      font-family: Arial, Helvetica, sans-serif;
+      // font-weight: 800;
+      text-transform: uppercase;
+      color: #005f45;
+      background-color: #e4c8a5;
+      cursor: pointer;
+      border-radius: 25px;
+      border: 3px solid #ccc;
+      margin-top: -3rem;
+      margin-left: 25rem;
+      margin-right: 25rem;
+      padding-left: 1em;
+      padding-top: .2em;
+      padding-right: 1em;
+      padding-bottom: .2em;
+      margin-bottom: 1rem;
+      &:hover{
+        transform: scale(1.1);
+        box-shadow: 2px 2px 2px 2px rgba(204, 204 ,204, .2);
+}
+}
+  }
+
 }

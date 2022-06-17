@@ -113,23 +113,20 @@ body .allCards .card__face--front {
     margin-top: -1rem;
   }
   body header #logo {
-    position: -webkit-sticky;
-    position: sticky;
     width: 50%;
     height: auto;
     background-color: #ccc;
     border-radius: 50%;
-    margin-top: 1rem;
-    padding-left: 0.45em;
-    padding-right: 0.45em;
+    margin-top: 2rem;
+    margin-left: 1rem;
   }
   body .allCards {
-    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: -3rem;
+    margin-top: -5.3rem;
     flex-direction: column;
+    perspective: 45px;
   }
   body .allCards img {
     border: 3px solid #ccc;
@@ -145,9 +142,10 @@ body .allCards .card__face--front {
          column-gap: 2rem;
     margin-left: 12rem;
     margin-right: 12rem;
+    margin-top: -2.5rem;
   }
 
-  #replay #replayButton {
+  #replayButton {
     visibility: hidden;
     font-family: Arial, Helvetica, sans-serif;
     text-transform: uppercase;
@@ -156,7 +154,7 @@ body .allCards .card__face--front {
     cursor: pointer;
     border-radius: 25px;
     border: 3px solid #ccc;
-    margin-top: -3rem;
+    margin-top: -4rem;
     margin-left: 25rem;
     margin-right: 25rem;
     padding-left: 1em;
@@ -165,8 +163,12 @@ body .allCards .card__face--front {
     padding-bottom: 0.2em;
     margin-bottom: 1rem;
   }
-  #replay #replayButton:hover {
-    transform: scale(1.1);
+  #replayButton:hover {
+    transform: scale(4.1);
     box-shadow: 2px 2px 2px 2px rgba(204, 204, 204, 0.2);
+    -webkit-transform: scale(4.1);
+    -moz-transform: scale(4.1);
+    -ms-transform: scale(4.1);
+    -o-transform: scale(4.1);
   }
 }/*# sourceMappingURL=style.css.map */

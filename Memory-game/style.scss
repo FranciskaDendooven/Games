@@ -23,7 +23,6 @@ body {
 }}
 
     #replay{
-      margin-top: 5em;
       margin-bottom: 3rem;
       display: flex;
       justify-content: center;
@@ -114,7 +113,7 @@ body {
     flex-wrap: wrap;
     background-image: url(/Memory-game/img/memory-game-bg-blWh\ -\ Copy.jpg);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: auto;
     border: none;
     background-color: #080808;
 
@@ -151,13 +150,15 @@ body {
       grid-template-columns: repeat(2, 14rem);
       grid-template-rows: repeat(8, 12rem);
       column-gap: 2rem;
-      margin-left: 12rem;
+      margin-left: 12.7rem;
       margin-right: 12rem;
       margin-top: -2.5rem;
   }
   }
   
   }
+  #replay{
+    margin-top: 4rem;
     #replayButton{
       visibility: hidden;
       font-family: Arial, Helvetica, sans-serif;
@@ -183,7 +184,94 @@ body {
         -moz-transform: scale(4.1);
         -ms-transform: scale(4.1);
         -o-transform: scale(4.1);
-}
+    }
+  }
   }
 
+}
+
+@media (min-width: 480px) and (max-width: 1024px) {
+  body{
+    margin: 1rem;
+    display:flex;
+    flex-wrap: wrap;
+    background-image: url(/Memory-game/img/memory-game-bg-blWh\ -\ Copy.jpg);
+    background-repeat: no-repeat;
+    background-size: auto;
+    border: none;
+    background-color: #080808;
+
+    header{
+      margin-left: -.2rem;
+      margin-top: -1rem;
+
+    #logo{
+      width: 40%;
+      height: auto;
+      background-color: #ccc;
+      border-radius: 50%;
+      margin-top: 2rem;
+      margin-left: 1rem;
+      padding-top: 1.3em;
+      padding-bottom: 1.3em;
+      padding-left: .3em;
+
+}}
+
+    .allCards{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 8rem;
+      flex-direction: column;
+      perspective: 45px;
+  
+      img{
+          border: 3px solid #ccc;
+          border-radius: 8px;
+          width: 225px;
+          height: 175px;
+  }
+  
+  .cardContainer {
+      display: grid;
+      grid-template-columns: repeat(4, 13rem);
+      grid-template-rows: repeat(4, 12rem);
+      // column-gap: 2rem;
+      margin-left: 14rem;
+      margin-right: 14rem;
+      margin-top: -2.5rem;
+  }
+  }
+
+  #replay{
+    margin-top: 5.5rem;
+    #replayButton{
+      visibility: hidden;
+      font-family: Arial, Helvetica, sans-serif;
+      text-transform: uppercase;
+      color: #005f45;
+      background-color: #e4c8a5;
+      cursor: pointer;
+      border-radius: 25px;
+      border: 3px solid #ccc;
+      margin-top: -4rem;
+      margin-left: 41rem;
+      margin-right: 41rem;
+      padding-left: 1em;
+      padding-top: .2em;
+      padding-right: 1em;
+      padding-bottom: .2em;
+      margin-bottom: 1rem;
+      &:hover{
+        transform: scale(6.1);
+        box-shadow: 2px 2px 2px 2px rgba(204, 204 ,204, .2);
+        -webkit-transform: scale(6.1);
+        -moz-transform: scale(6.1);
+        -ms-transform: scale(6.1);
+        -o-transform: scale(6.1);
+}
+  }
+  }
+}
 }

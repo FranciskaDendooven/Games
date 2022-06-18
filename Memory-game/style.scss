@@ -106,7 +106,7 @@ body {
 }
 }
 
-@media screen and (min-width: 320px) and (max-width: 480px) {
+@media screen and (min-width: 320px) and (max-width: 479.9px) {
   body{
     margin: 1rem;
     display:flex;
@@ -122,12 +122,16 @@ body {
       margin-top: -1rem;
 
     #logo{
-      width: 50%;
+      width: 39%;
       height: auto;
       background-color: #ccc;
       border-radius: 50%;
       margin-top: 2rem;
       margin-left: 1rem;
+      padding-top: 1.3em;
+      padding-bottom: 1.3em;
+      padding-left: .3em;
+
 }}
   
     .allCards{
@@ -190,7 +194,7 @@ body {
 
 }
 
-@media (min-width: 480px) and (max-width: 1024px) {
+@media (min-width: 480px) and (max-width: 767.9px) {
   body{
     margin: 1rem;
     display:flex;
@@ -206,7 +210,7 @@ body {
       margin-top: -1rem;
 
     #logo{
-      width: 40%;
+      width: 25%;
       height: auto;
       background-color: #ccc;
       border-radius: 50%;
@@ -222,7 +226,7 @@ body {
       display: flex;
       justify-content: center;
       align-items: center;
-      margin-top: 8rem;
+      margin-top: 7rem;
       flex-direction: column;
       perspective: 45px;
   
@@ -264,14 +268,26 @@ body {
       padding-bottom: .2em;
       margin-bottom: 1rem;
       &:hover{
-        transform: scale(6.1);
+        transform: scale(2.1);
         box-shadow: 2px 2px 2px 2px rgba(204, 204 ,204, .2);
-        -webkit-transform: scale(6.1);
-        -moz-transform: scale(6.1);
-        -ms-transform: scale(6.1);
-        -o-transform: scale(6.1);
+        -webkit-transform: scale(2.1);
+        -moz-transform: scale(2.1);
+        -ms-transform: scale(2.1);
+        -o-transform: scale(2.1);
 }
   }
   }
 }
 }
+@media (min-width: 768px) and (max-width: 1024px) {
+  body{
+    margin: 1rem;
+    display:flex;
+    flex-wrap: wrap;
+    background-image: url(/Memory-game/img/memory-game-bg-blWh\ -\ Copy.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: none;
+    background-color: #080808;
+  }
+  }
